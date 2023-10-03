@@ -1,0 +1,161 @@
+
+.wrapper{
+    transition: .6s ease-in-out !important;
+    &.login{
+    animation: login 1.5s ease-in-out both;
+    }
+    &.reg{
+    animation: reg 1.5s ease-in-out both;
+    }
+    font-family: 'poppins';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 30vw;
+    height: 60vh;
+    border: 2px solid rgba(99, 99, 99, 0.5);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+    &.hidden{
+      display: none;
+    }
+    &.close{
+      pointer-events: none;
+      animation: loginClose .6s ease-in-out forwards;
+    }
+    &.active{
+      height: 70vh !important;
+    }
+    .login-register{
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-evenly;
+    }
+    .log-in{
+      width: 85%;
+      h1{
+        text-align: center;
+        height: 80px;
+        margin-bottom: 20px;
+      }
+      input:not(input[type='checkbox']){
+        padding-right: 25px !important;
+        position: absolute;
+        top: 3px;
+        left: 3px;
+        height: 20px;
+        font-size: 1.1rem;
+        width: calc(100% - 3px);
+        border: none;
+        outline: none;
+        background-color: transparent;
+        &:focus~label,
+        &:valid~label{
+        animation: label .5s ease-out both;
+      }
+      }
+      a{
+        color: $secondary !important;
+        text-decoration: none;
+      }
+      label{
+        position: relative;
+        font-size: 1.1rem;
+        pointer-events: none;
+        }
+      i{
+        position: absolute;
+        right: 6px;
+        bottom: 6px;
+        z-index: 1;
+        cursor: pointer;
+        padding: 2px;
+        &.hidden{
+          display: none;
+        }
+      }
+      .input-box{
+        position: relative;
+        margin-bottom: 50px;
+        width: 100%;
+        border-bottom: 2px solid $secondary;
+      }
+    }
+    .remember-forgot{
+      margin-top: 25px;
+      display: flex;
+      justify-content: space-between
+    }
+    input[type='checkbox']{
+      accent-color: $secondary;
+    }
+    button{
+      width: 100%;
+      height: 40px;
+      background-color: $secondary;
+      border-radius: 10px;
+      outline: none;
+      color: white !important;
+      border: none;
+      cursor: pointer;
+      margin-top: 30px;
+    }
+  }
+  i{
+    color:$secondary;
+    // color:#db3554 ;
+  }
+  .fa-solid.x{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px 15px;
+    font-size: 2rem;
+    color: white !important;
+    background-color: $secondary;
+    border-bottom-left-radius: 15px;
+    cursor: pointer;
+  }
+  div.div-2{
+    position: absolute;
+    transform: translateX(40vw) !important;
+    transition: .8s ease-in-out;
+  }
+  div.move2{
+    transform: translateX(0) !important;
+  }
+  div.div-1{
+    transition: .8s ease-in-out;
+  }
+  div.move{
+    transform: translateX(-40vw) !important;
+  }
+  
+  
+    img.clipboard-svg{
+      position: absolute;
+      top: 34.5vh;
+      left: 37.5vw;
+      width: 25vw;
+      height: 30vh;
+      -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+      animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    }
+    img.clipboard-svg.hidden{
+      display: none;
+    }
+    .animate-svg{
+      animation: text-focus-in .6s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    }

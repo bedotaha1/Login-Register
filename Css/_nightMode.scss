@@ -1,0 +1,51 @@
+
+body.checked{
+    background: radial-gradient( circle at 64% 50%,rgb(29, 29, 29) 10%,rgb(0, 0, 0) 90.2%);
+    .activ-nav{
+      background-color: $nihgtMode !important;
+    }
+    nav h1{
+      text-shadow: 0 0 10px #E3E3E3;
+      text-shadow: 0 0 20px #E3E3E3;
+      text-shadow: 0 0 30px 10px #E3E3E3;
+    }
+    *:not(span,a,button.btn-2,i){
+      color: white !important;
+    }
+    .btn-1{
+      background-color: $nihgtMode !important;
+      -webkit-box-shadow:0px 0px 66px 17px rgba(37,208,188,0.18) !important;
+  -moz-box-shadow: 0px 0px 66px 17px rgba(37,208,188,0.18) !important;
+  box-shadow: 0px 0px 66px 17px rgba(37,208,188,0.18)  !important;
+      &:hover{
+        -webkit-box-shadow:0px 0px 70px 2px $secondary !important;
+        -moz-box-shadow: 0px 0px 70px 2px $secondary !important;
+        box-shadow: 0px 0px 70px 2px $secondary  !important;
+        background-color: transparent !important;
+      }
+    }
+    span{
+      text-shadow: rgba(37,208,188,0.43) 0px 0px 52px !important;
+    &.dot{
+      text-shadow: rgba(37,208,188,0.43) 0px 0px 10px !important;
+    }
+    }
+    .btn-2{
+      background-color: transparent !important;
+      border: 2px solid $nihgtMode !important;
+      text-shadow: 0 0 50px $nihgtMode !important;
+      border-radius: 10px !important;
+      color: $nihgtMode !important;
+      box-shadow: 0 0 15px $nihgtMode !important;
+      box-shadow: 5px 5px 25px $nihgtMode !important;
+      &:hover{
+        box-shadow: 0 0 15px $secondary !important;
+        box-shadow: 5px 5px 25px $secondary !important;
+        background-color: transparent !important;
+        border-color: $secondary !important;
+        color: $secondary !important;
+        text-shadow: 0 0 50px $secondary !important;
+      }
+    }
+  }
+  

@@ -1,0 +1,66 @@
+
+@keyframes login {
+    0% {
+      top: 35%;
+      left: 5%;
+      transform: scale(0.02);
+    }
+    100%{
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%) scale(1);
+    }
+  }
+  @keyframes loginClose {
+    0% {
+      opacity: 1;
+    }
+    100%{
+      opacity: 0;
+    }
+  }
+  
+  @keyframes reg {
+    0% {
+      top: 30%;
+      left: 23%;
+      transform: scale(0.02);
+    }
+    100%{
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%) scale(1);
+    }
+  }
+  @keyframes label {
+    from{
+      top: 0;
+    }
+    to{
+      top: -25px;
+    }
+  }
+  @keyframes text-focus-in {
+    0% {
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+
+        filter: blur(0px);
+      opacity: 1;
+
+    }
+  }
+  @keyframes scale-up-center {
+    0% {
+
+        transform: scale(0.5);
+
+    }
+    100% {
+
+        transform: scale(1);
+
+    }
+  }
